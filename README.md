@@ -2,7 +2,7 @@
 
 ### The Assignment
 
-We have designed a desktop wireframe for a hypothetical web app named "HouseCall". HouseCall is an on-demand service provider that connects skilled workers in various sectors with the customers that need them. The app provides a showcase of the types of services offered as well as helps customers easily book these services.
+We have [designed a desktop wireframe](housecall.jpg) for a hypothetical web app named "HouseCall". HouseCall is an on-demand service provider that connects skilled workers in various sectors with the customers that need them. The app provides a showcase of the types of services offered as well as helps customers easily book these services.
 
 ### The Task
 
