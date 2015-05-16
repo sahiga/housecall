@@ -1,0 +1,90 @@
+
+/* Custom styles */
+
+body {
+  color: #222;
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #3BC993;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+h1 {
+  font-size: 1.5em;
+  margin: 0.5em ;
+  text-align: center;
+}
+
+/* Inputs, textareas, and buttons */
+input, textarea {
+  margin: 0.5em 0;
+  padding: 0.5em;
+  width: 200px;
+  font-size: 1em;
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  border-width: 0 0 2px 0;
+  border-style: solid;
+  border-color: #3BC993;
+}
+
+.btn {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  padding: 0.5em;
+  letter-spacing: 0.05em;
+  font-size: 1em;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+  border: 0;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.btn-outlined {
+  color: #3BC993;
+  border: 2px solid #3BC993;
+  background: transparent;
+}
+
+.btn-filled {
+  color: #fff;
+  background: #3BC993;
+}
+
+/* Layout */
+.row {
+  overflow: auto;
+}
+
+[class*="col"] {
+  float: left;
+}
+
+.col2 {
+  width: 16%;
+}
+
+.col4 {
+  width: 23%;
+}
+
+.col6 {
+  width: 48%;
+}
+
+.col8 {
+  width: 74%;
+}
