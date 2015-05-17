@@ -5,62 +5,100 @@
     <link href="reset.css" rel="stylesheet" type="text/css" />
     <link href="style.css" rel="stylesheet" type="text/css" />
     <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css">
-    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+   <!--  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"> -->
   </head>
   <body>
     <header>
-      <h1 class="logo">housecall</h1>
-      <div class="search">
-        <input type="text" placeholder="Search" />
-        Vancouver
+      <div class="row clearfix container">
+        <div class="col3">
+          <h1 class="logo">housecall</h1>
+        </div>
+        <div class="col6">
+          <div class="search">
+            <input type="text" placeholder="Search" />
+            Vancouver
+          </div>
+        </div>
+        <div class="col3">
+          <ul class="header-list">
+            <li class="header-list-item"><a href="">Cart</a></li>
+            <li class="header-list-item"><a href="">Help</a></li>
+            <li class="header-list-item"><a href="">Sign In</a></li>
+            <li class="header-list-item"><a href="">Sign Up</a></li>
+          </ul>
+        </div>
       </div>
-      <ul class="header-list">
-        <li><a href="">Cart</a></li>
-        <li><a href="">Help</a></li>
-        <li><a href="">Sign In</a></li>
-        <li><a href="">Sign Up</a></li>
-      </ul>
     </header>
-    <div class="row">
+    <div class="row clearfix container">
       <aside class="sidebar col4">
         <h2>What's Around</h2>
         <h3 class="sidebar-header">Health and Wellness</h3>
         <ul class="sidebar-list">
-          <li><a href="">Chiropractor</a></li>
-          <li><a href="">Massage</a></li>
-          <li><a href="">Meditation</a></li>
-          <li><a href="">Yoga</a></li>
-          <li><a href="">Physio</a></li>
-          <li><a href="">Acupuncture</a></li>
+          <li class="sidebar-list-item">
+            <a class="block-link" href="">Chiropractor</a>
+          </li>
+          <li class="sidebar-list-item">
+            <a class="block-link" href="">Massage</a>
+          </li>
+          <li class="sidebar-list-item">
+            <a class="block-link" href="">Meditation</a>
+          </li>
+          <li class="sidebar-list-item">
+            <a class="block-link" href="">Yoga</a>
+          </li>
+          <li class="sidebar-list-item">
+            <a class="block-link" href="">Physio</a>
+          </li>
+          <li class="sidebar-list-item">
+            <a class="block-link" href="">Acupuncture</a>
+          </li>
         </ul>
         <h3 class="sidebar-header">Tutoring Services</h3>
         <ul class="sidebar-list">
-          <li><a href="">Learn a language</a></li>
-          <li><a href="">Learn an instrument</a></li>
+          <li class="sidebar-list-item">
+            <a class="block-link" href="">Learn a language</a>
+          </li>
+          <li class="sidebar-list-item">
+            <a class="block-link" href="">Learn an instrument</a>
+          </li>
         </ul>
         <h3 class="sidebar-header">Home Services</h3>
         <ul class="sidebar-list">
-          <li><a href="">Cleaning</a></li>
-          <li><a href="">Moving</a></li>
-          <li><a href="">Painting</a></li>
-          <li><a href="">Gardening</a></li>
-          <li><a href="">Home organization</a></li>
+          <li class="sidebar-list-item">
+            <a class="block-link" href="">Cleaning</a>
+          </li>
+          <li class="sidebar-list-item">
+            <a class="block-link" href="">Moving</a>
+          </li>
+          <li class="sidebar-list-item">
+            <a class="block-link" href="">Painting</a>
+          </li>
+          <li class="sidebar-list-item">
+            <a class="block-link" href="">Gardening</a>
+          </li>
+          <li class="sidebar-list-item"><a class="block-link" href="">Home organization</a></li>
         </ul>
         <h3 class="sidebar-header">General Contracting</h3>
         <ul class="sidebar-list">
-          <li><a href="">Plumbing</a></li>
-          <li><a href="">Electrical</a></li>
-          <li><a href="">Renovations</a></li>
+          <li class="sidebar-list-item">
+            <a class="block-link" href="">Plumbing</a>
+          </li>
+          <li class="sidebar-list-item">
+            <a class="block-link" href="">Electrical</a>
+          </li>
+          <li class="sidebar-list-item">
+            <a class="block-link" href="">Renovations</a>
+          </li>
         </ul>
         <a class="small" href="">See More</a>
       </aside>
       <section class="main col8">
-        <div class="row primary">
+        <div class="row clearfix primary">
           <div class="col9">
-            <img src="http://placehold.it/350x200" />
+            <img class="photo" src="http://placehold.it/350x200" />
           </div>
           <div class="col3">
-            <p class="small-caps">Featured Deal</p>
+            <p class="small caps">Featured Deal</p>
             <h3>Get your car washed and waxed and ready for the summer roads.</h3>
             <p class="small">
               Includes a waxing and cleaning from inside to out by one of our proud professional cleaning technicians
@@ -74,14 +112,14 @@
               Cleaning
             </p>
           </div>
-        </div><!--/.row-->
-        <div class="row">
+        </div><!--/.row clearfix-->
+        <div class="row clearfix secondary">
           <div class="col6">
-            <img src="http://placehold.it/350x200" />
+            <img class="photo" src="http://placehold.it/350x200" />
             <p>
               Back pains? See a certified chiropractor for all your pain killing muscle enhancing needs.
             </p>
-            <div class="row">
+            <div class="row clearfix">
               <div class="col3">
                 <p>
                   <span class="price-left">$120</span>
@@ -97,11 +135,11 @@
             </div>
           </div><!--/.col6-->
           <div class="col6">
-            <img src="http://placehold.it/350x200" />
+            <img class="photo" src="http://placehold.it/350x200" />
             <p>
               Hola! Learning Spanish can be as easy as 1, 2, 3!
             </p>
-            <div class="row">
+            <div class="row clearfix">
               <div class="col3">
                 <p>
                   <span class="price-left">$120</span>
@@ -116,14 +154,14 @@
               </div>
             </div>
           </div><!--/.col6-->
-        </div><!--/.row-->
-        <div class="row">
+        </div><!--/.row clearfix-->
+        <div class="row clearfix secondary">
           <div class="col6">
-            <img src="http://placehold.it/350x200" />
+            <img class="photo" src="http://placehold.it/350x200" />
             <p>
               Toilet clogged and don't know what to do? Fix it with a professional plumber.
             </p>
-            <div class="row">
+            <div class="row clearfix">
               <div class="col3">
                 <p>
                   <span class="price-left">$85</span>
@@ -139,11 +177,11 @@
             </div>
           </div><!--/.col6-->
           <div class="col6">
-            <img src="http://placehold.it/350x200" />
+            <img class="photo" src="http://placehold.it/350x200" />
             <p>
               Get a house cleaner to your door within the hour.
             </p>
-            <div class="row">
+            <div class="row clearfix">
               <div class="col3">
                 <p>
                   <span class="price-left">$99</span>
@@ -158,15 +196,15 @@
               </div>
             </div>
           </div><!--/.col6-->
-        </div><!--/.row-->
-        <div class="row">
+        </div><!--/.row clearfix-->
+        <div class="row clearfix secondary">
           <div class="col4">
-            <img src="http://placehold.it/350x200" />
+            <img class="photo" src="http://placehold.it/350x200" />
             <p>
               Electricity is broken? Fix it!
             </p>
-            <div class="row">
-              <div class="col3">
+            <div class="row clearfix">
+              <div class="col4">
                 <p>
                   <span class="price-left">$210</span>
                   <span class="price-right">.00</span>
@@ -181,18 +219,18 @@
             </div>
           </div><!--/.col4-->
           <div class="col4">
-            <img src="http://placehold.it/350x200" />
+            <img class="photo" src="http://placehold.it/350x200" />
             <p>
               Send movers to your door without any hassle.
             </p>
-            <div class="row">
-              <div class="col3">
+            <div class="row clearfix">
+              <div class="col4">
                 <p>
                   <span class="price-left">$1210</span>
                   <span class="price-right">.00</span>
                 </p>
               </div>
-              <div class="col9">
+              <div class="col8">
                 <p class="small">
                   <span class="light">Home Services / </span>
                   Moving
@@ -201,18 +239,18 @@
             </div>
           </div><!--/.col4-->
           <div class="col4">
-            <img src="http://placehold.it/350x200" />
+            <img class="photo" src="http://placehold.it/350x200" />
             <p>
               Buon Giorno. Get ready for your trip to Italy with a 3 day lesson plan.
             </p>
-            <div class="row">
-              <div class="col3">
+            <div class="row clearfix">
+              <div class="col4">
                 <p>
-                  <span class="price-left">$60 per day</span>
-                  <span class="price-right">.00</span>
+                  <span class="price-left">$60</span>
+                  <span class="price-right">.00 per day</span>
                 </p>
               </div>
-              <div class="col9">
+              <div class="col8">
                 <p class="small">
                   <span class="light">General Contracting / </span>
                   Plumbing
@@ -220,21 +258,21 @@
               </div>
             </div>
           </div><!--/.col4-->
-        </div><!--/.row-->
-        <div class="row">
+        </div><!--/.row clearfix-->
+        <div class="row clearfix">
           <div class="col4">
-            <img src="http://placehold.it/350x200" />
+            <img class="photo" src="http://placehold.it/350x200" />
             <p>
               Need a party pronto? Hire a clown or party balloon castle.
             </p>
-            <div class="row">
+            <div class="row clearfix">
               <div class="col3">
                 <p>
                   <span class="price-left">$80</span>
                   <span class="price-right">.00 per 1/2 hour</span>
                 </p>
               </div>
-              <div class="col9">
+              <div class="col8">
                 <p class="small">
                   <span class="light">Fun / </span>
                   Party Planning
@@ -243,18 +281,18 @@
             </div>
           </div><!--/.col4-->
           <div class="col4">
-            <img src="http://placehold.it/350x200" />
+            <img class="photo" src="http://placehold.it/350x200" />
             <p>
               Time to fix that leaky faucet with this special deal.
             </p>
-            <div class="row">
-              <div class="col3">
+            <div class="row clearfix">
+              <div class="col4">
                 <p>
                   <span class="price-left">$780</span>
-                  <span class="price-right">.00</span>
+                  <superscript class="price-right">.00</superscript>
                 </p>
               </div>
-              <div class="col9">
+              <div class="col8">
                 <p class="small">
                   <span class="light">General Contracting / </span>
                   Plumbing
@@ -263,18 +301,18 @@
             </div>
           </div><!--/.col4-->
           <div class="col4">
-            <img src="http://placehold.it/350x200" />
+            <img class="photo" src="http://placehold.it/350x200" />
             <p>
               Looks like those grapes are ready for harvesting. Do it yourself or get some help.
             </p>
-            <div class="row">
-              <div class="col3">
+            <div class="row clearfix">
+              <div class="col4">
                 <p>
                   <span class="price-left">$10</span>
                   <span class="price-right">.00</span>
                 </p>
               </div>
-              <div class="col9">
+              <div class="col8">
                 <p class="small">
                   <span class="light">Home Services / </span>
                   Gardening
@@ -282,13 +320,15 @@
               </div>
             </div>
           </div><!--/.col4-->
-        </div><!--/.row-->
+        </div><!--/.row clearfix-->
+      </section>
+      <section class="center">
         <button class="btn btn-outlined">See More</button>
       </section>
-    </div><!--/.row-->
+    </div><!--/.row clearfix-->
     <footer>
-      <div class="row">
-        <div class="col2">
+      <div class="row clearfix container">
+        <div class="col3">
           <h3 class="sidebar-header">Company</h3>
           <ul class="sidebar-list">
             <li><a href="">About Housecall</a></li>
@@ -297,8 +337,8 @@
             <li><a href="">Press</a></li>
             <li><a href="">Investor Relations</a></li>
           </ul>
-        </div><!--/.col2-->
-        <div class="col2">
+        </div><!--/.col3-->
+        <div class="col3">
           <h3 class="sidebar-header">More</h3>
           <ul class="sidebar-list">
             <li><a href="">Customer Support</a></li>
@@ -306,20 +346,20 @@
             <li><a href="">Gift Cards</a></li>
             <li><a href="">Gift Shop</a></li>
           </ul>
-        </div><!--/.col2-->
-        <div class="col2">
+        </div><!--/.col3-->
+        <div class="col3">
           <h3 class="sidebar-header">Follow Us</h3>
           <ul class="sidebar-list">
             <li><a href="">Facebook</a></li>
             <li><a href="">Twitter</a></li>
             <li><a href="">LinkedIn</a></li>
           </ul>
-        </div><!--/.col2-->
-        <div class="col2">
+        </div><!--/.col3-->
+        <div class="col3">
           <button class="btn btn-filled">Get the app</button>
-        </div><!--/.col2-->
-      </div><!--/.row-->
-      <p class="row">
+        </div><!--/.col3-->
+      </div><!--/.row clearfix-->
+      <p class="row clearfix center">
         &copy; 2015 Housecall, Inc. All Rights Reserved.
         <a href="">Terms of Use</a> |
         <a href="">Privacy Policy</a>
