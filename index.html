@@ -5,17 +5,24 @@
     <link href="reset.css" rel="stylesheet" type="text/css" />
     <link href="style.css" rel="stylesheet" type="text/css" />
     <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css">
-   <!--  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"> -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
   </head>
   <body>
     <header>
       <div class="row clearfix container">
         <div class="col3">
-          <h1 class="logo">housecall</h1>
+          <h1 class="logo">
+            <span class="fa fa-home"></span>
+            housecall
+          </h1>
         </div>
         <div class="col6">
-          <div class="search">
+          <div class="input-group">
+            <span class="fa fa-search input-icon"></span>
             <input type="text" class="search-box" placeholder="Search" />
+          </div>
+          <div class="input-group">
+            <span class="fa fa-map-marker input-icon"></span>
             <input type="text" class="location-box" placeholder="Vancouver" />
           </div>
         </div>
@@ -29,11 +36,16 @@
         </div>
       </div>
     </header>
+    <section class="container">
+      <h1 class="masthead">
+        Housecall in Vancouver
+      </h1>
+    </section>
     <div class="row clearfix container">
       <div class="col4">
         <aside class="sidebar">
           <div class="sidebar-header">
-            <h2>What's Around</h2>
+            <h2 class="sidebar-main-title">What's Around</h2>
             <h3 class="sidebar-title">Health and Wellness</h3>
           </div>
           <ul class="sidebar-list">
@@ -113,7 +125,7 @@
             <p class="small">
               Includes a waxing and cleaning from inside to out by one of our proud professional cleaning technicians
             </p>
-            <p>
+            <p class="price">
               <span class="price-left">$120</span>
               <span class="price-right">.00</span>
             </p>
@@ -133,13 +145,13 @@
                 </p>
                 <div class="row clearfix">
                   <div class="col3">
-                    <p>
+                    <p class="price">
                       <span class="price-left">$120</span>
                       <span class="price-right">.00</span>
                     </p>
                   </div><!--/.col3-->
                   <div class="col9">
-                    <p class="small">
+                    <p class="small pull-right">
                       <span class="light">Home Services / </span>
                       Cleaning
                     </p>
@@ -157,13 +169,13 @@
                 </p>
                 <div class="row clearfix">
                   <div class="col3">
-                    <p>
+                    <p class="price">
                       <span class="price-left">$120</span>
                       <span class="price-right">.00</span>
                     </p>
                   </div>
                   <div class="col9">
-                    <p class="small">
+                    <p class="small pull-right">
                       <span class="light">Tutoring Services / </span>
                       Learning a language
                     </p>
@@ -182,18 +194,18 @@
                   Toilet clogged and don't know what to do? Fix it with a professional plumber.
                 </p>
                 <div class="row clearfix">
-                  <div class="col3">
-                    <p>
+                  <div class="col4">
+                    <p class="price">
                       <span class="price-left">$85</span>
                       <span class="price-right">.00 per hour</span>
                     </p>
                   </div>
-                  <div class="col9">
-                    <p class="small">
+                  <div class="col8">
+                    <p class="small pull-right">
                       <span class="light">General Contracting / </span>
                       Plumbing
                     </p>
-                  </div><!--/.col9-->
+                  </div><!--/.col8-->
                 </div><!--/.row-->
               </div><!--/.card-->
             </div><!--/.description-->
@@ -207,13 +219,13 @@
                 </p>
                 <div class="row clearfix">
                   <div class="col3">
-                    <p>
+                    <p class="price">
                       <span class="price-left">$99</span>
                       <span class="price-right">.00</span>
                     </p>
                   </div>
                   <div class="col9">
-                    <p class="small">
+                    <p class="small pull-right">
                       <span class="light">Home Services / </span>
                       Cleaning
                     </p>
@@ -231,7 +243,7 @@
                 <p>
                   Electricity is broken? Fix it!
                 </p>
-                <p>
+                <p class="price">
                   <span class="price-left">$210</span>
                   <span class="price-right">.00</span>
                 </p>
@@ -250,7 +262,7 @@
                   Send movers to your door without any hassle.
                 </p>
                 <div class="row">
-                  <p>
+                  <p class="price">
                     <span class="price-left">$1210</span>
                     <span class="price-right">.00</span>
                   </p>
@@ -270,7 +282,7 @@
                   Buon Giorno. Get ready for your trip to Italy with a 3 day lesson plan.
                 </p>
                 <div class="row clearfix">
-                  <p>
+                  <p class="price">
                     <span class="price-left">$60</span>
                     <span class="price-right">.00 per day</span>
                   </p>
@@ -292,7 +304,7 @@
                   Need a party pronto? Hire a clown or party balloon castle.
                 </p>
                 <div class="row clearfix">
-                  <p>
+                  <p class="price">
                     <span class="price-left">$80</span>
                     <span class="price-right">.00 per 1/2 hour</span>
                   </p>
@@ -329,7 +341,7 @@
                 <p>
                   Looks like those grapes are ready for harvesting. Do it yourself or get some help.
                 </p>
-                <p>
+                <p class="price">
                   <span class="price-left">$10</span>
                   <span class="price-right">.00</span>
                 </p>
@@ -341,9 +353,9 @@
             </div><!--/.description-->
           </div><!--/.col4--> 
         </div><!--/.row clearfix-->
-      </section>
-      <section class="center">
-        <button class="btn btn-outlined">See More</button>
+        <section class="center">
+          <button class="btn btn-outlined">See More</button>
+        </section>
       </section>
     </div><!--/.row clearfix-->
     <footer>
@@ -370,9 +382,9 @@
         <div class="col3 secondary">
           <h3 class="footer-header">Follow Us</h3>
           <ul class="footer-list">
-            <li class="footer-list-item"><a href="">Facebook</a></li>
-            <li class="footer-list-item"><a href="">Twitter</a></li>
-            <li class="footer-list-item"><a href="">LinkedIn</a></li>
+            <li class="footer-list-item"><a href=""><span class="fa fa-facebook-square"></span> Facebook</a></li>
+            <li class="footer-list-item"><a href=""><span class="fa fa-twitter-square"></span> Twitter</a></li>
+            <li class="footer-list-item"><a href=""><span class="fa fa-linkedin-square"></span> LinkedIn</a></li>
           </ul>
         </div><!--/.col3-->
         <div class="col3">

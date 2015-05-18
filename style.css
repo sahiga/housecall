@@ -27,36 +27,85 @@ h1, h2, h3 {
   font-weight: 700;
 }
 
-h1 {
-  font-size: 1.6em;
-  margin: 0.5em 0;
-}
-
-h2 {
-  font-size: 1.4em;
-}
-
 h3 {
   font-size: 1.2em;
 }
 
-/* Inputs, textareas, and buttons */
-input, textarea {
+.sidebar-main-title {
+  font-size: 1.4em;
+  margin: 0 0 1em 0;
+}
+
+.sidebar-main-title, .masthead {
+  border-style: solid;
+  border-width: 0 0 2px 0;
+  border-color: #DEEAFF;
+  padding: 0.5em 0;
+}
+
+.logo {
+  font-size: 1.6em;
   margin: 0.5em 0;
-  padding: 0.5em;
-  width: 200px;
+}
+
+.masthead {
+  font-size: 2.2em;
+  font-weight: 300;
+}
+
+/* Inputs and buttons */
+input {
+  margin: 0.5em 0;
   font-size: 1em;
+  padding: 0.5em 0.5em 0.5em 1.8em;
   font-family: "Lato", Helvetica, Arial, sans-serif;
   border: 0;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
-  /*box-shadow: -1px -1px 5px #ccc;*/
+}
+
+.input-group {
+  position: relative;
+  display: inline-block;
+}
+
+.input-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #555;
+  margin: 1.1em 0 0 0.5em;
+}
+
+.search-box {
+  width: 300px;
+}
+
+.location-box {
+  width: 150px;
+}
+
+.location-box::-webkit-input-placeholder {
+   color: #222;
+}
+
+.location-box:-moz-placeholder { /* Firefox 18- */
+   color: #222;  
+}
+
+.location-box::-moz-placeholder {  /* Firefox 19+ */
+   color: #222;  
+}
+
+.location-box:-ms-input-placeholder {  
+   color: #222;  
 }
 
 .btn {
   font-family: "Lato", Helvetica, Arial, sans-serif;
-  padding: 0.5em 1em;
+  padding: 1em 2em;
+  margin: 2em 0;
   letter-spacing: 0.05em;
   font-size: 0.8em;
   font-weight: 700;
@@ -128,23 +177,31 @@ input, textarea {
 
 header {
   background: aliceblue;
-  padding: 1em;
   font-size: 0.9em;
 }
 
 .header-list {
-  margin: 1em;
+  margin: 1em 0;
+  text-align: right;
 }
 
 .header-list-item {
   display: inline-block;
-  margin: 0 0.25em;
+  margin: 0 0.5em 0 0;
+  padding: 0 0.5em 0 0;
+  border-width: 0 1px 0 0;
+  border-style: solid;
+  border-color: #3C72D1;
+}
+
+.header-list-item:last-child {
+  border: 0;
 }
 
 .sidebar {
   background: aliceblue;
   padding: 1em 0;
-  margin: 0.5em;
+  margin: 0.5em 0 0 0;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
@@ -187,7 +244,7 @@ header {
 }
 
 p {
-  margin: 1em 0;
+  margin: 0.5em 0;
   line-height: 1.5em;
 }
 
@@ -198,11 +255,15 @@ p {
 .caps {
   text-transform: uppercase;
   border-style: solid;
-  border-color: #3C72D1;
+  border-color: #DEEAFF;
   border-width: 0 0 2px 0;
   color: #3c72d1;
   padding: 0.5em 1em 0.5em 0;
   margin: 0 0 0.8em 0;
+}
+
+.price {
+  white-space: nowrap;
 }
 
 .price-left {
@@ -216,7 +277,6 @@ p {
 }
 
 footer {
-  margin: 2em 0 0 0;
   padding: 1em;
   background: aliceblue;
 }
@@ -235,7 +295,7 @@ footer {
   border-color: #D7E6FF;
   border-width: 0 0 2px 0;
   background: aliceblue;
-  height: 330px;
+  height: 280px;
   margin: 0 2px;
   overflow: hidden;
 }
@@ -253,7 +313,22 @@ footer {
   line-height: 1.5em;
 }
 
-@media (max-width: 768px) {
+.pull-right {
+  text-align: right;
+  margin: 1em 0 0 0;
+}
+
+.light {
+  color: #999;
+}
+
+@media (max-width: 1000px) {
+  .container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 850px) {
   [class*="col"] {
     float: none;
     width: auto;
@@ -261,11 +336,19 @@ footer {
     margin: 1em auto;
   }
 
+  .sidebar {
+    margin: 0;
+  }
+
   .card {
     height: auto;
   }
 
-  header, footer {
+  .description {
+    position: relative;
+  }
+
+  header, footer, .header-list {
     text-align: center;
   }
 }
