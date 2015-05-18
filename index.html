@@ -2,31 +2,32 @@
 <html lang="en">
   <head>
     <meta charset="utf8">
-    <link href="reset.css" rel="stylesheet" type="text/css" />
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <title>Housecall</title>
     <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css">
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="reset.css" rel="stylesheet" type="text/css" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
     <header>
       <div class="row clearfix container">
-        <div class="col3">
-          <h1 class="logo">
+        <div class="col2">
+          <h1 class="logo nowrap">
             <span class="fa fa-home"></span>
             housecall
           </h1>
         </div>
-        <div class="col6">
-          <div class="input-group">
-            <span class="fa fa-search input-icon"></span>
-            <input type="text" class="search-box" placeholder="Search" />
+        <div class="col10 header-right-align">
+          <div class="nowrap input-group">
+            <div class="input-group">
+              <span class="fa fa-search input-icon"></span>
+              <input type="text" class="search-box" placeholder="Search" />
+            </div>
+            <div class="input-group">
+              <span class="fa fa-map-marker input-icon"></span>
+              <input type="text" class="location-box" placeholder="Vancouver" />
+            </div>
           </div>
-          <div class="input-group">
-            <span class="fa fa-map-marker input-icon"></span>
-            <input type="text" class="location-box" placeholder="Vancouver" />
-          </div>
-        </div>
-        <div class="col3">
           <ul class="header-list">
             <li class="header-list-item"><a href="">Cart</a></li>
             <li class="header-list-item"><a href="">Help</a></li>
@@ -44,9 +45,12 @@
     <div class="row clearfix container">
       <div class="col4">
         <aside class="sidebar">
+          <h2 class="sidebar-main-title">What's Around</h2>
           <div class="sidebar-header">
-            <h2 class="sidebar-main-title">What's Around</h2>
-            <h3 class="sidebar-title">Health and Wellness</h3>
+            <h3 class="sidebar-title">
+              Health and Wellness
+              <span class="fa fa-minus toggle-icon"></span>
+            </h3>
           </div>
           <ul class="sidebar-list">
             <li class="sidebar-list-item">
@@ -69,7 +73,10 @@
             </li>
           </ul>
           <div class="sidebar-header">
-            <h3 class="sidebar-title">Tutoring Services</h3>
+            <h3 class="sidebar-title">
+              Tutoring Services
+              <span class="fa fa-minus toggle-icon"></span>
+            </h3>
           </div>
           <ul class="sidebar-list">
             <li class="sidebar-list-item">
@@ -80,7 +87,10 @@
             </li>
           </ul>
           <div class="sidebar-header">
-            <h3 class="sidebar-title">Home Services</h3>
+            <h3 class="sidebar-title">
+              Home Services
+              <span class="fa fa-minus toggle-icon"></span>
+            </h3>
           </div>
           <ul class="sidebar-list">
             <li class="sidebar-list-item">
@@ -98,7 +108,10 @@
             <li class="sidebar-list-item"><a class="block-link" href="">Home organization</a></li>
           </ul>
           <div class="sidebar-header">
-            <h3 class="sidebar-title">General Contracting</h3>
+            <h3 class="sidebar-title">
+              General Contracting
+              <span class="fa fa-minus toggle-icon"></span>
+            </h3>
           </div>
           <ul class="sidebar-list">
             <li class="sidebar-list-item">
@@ -111,21 +124,23 @@
               <a class="block-link" href="">Renovations</a>
             </li>
           </ul>
-          <a class="small see-more-link" href="">See More</a>
+          <div class="small see-more-link">
+            <a href="">See More</a>
+          </div>
         </aside>
       </div><!--/.col4-->
       <section class="main col8">
         <div class="row clearfix primary">
-          <div class="col9">
+          <div class="col9 primary-photo">
             <img class="photo-featured" src="http://placehold.it/350x200" />
           </div>
-          <div class="col3">
+          <div class="col3 primary-description">
             <p class="small caps">Featured Deal</p>
             <h3>Get your car washed and waxed and ready for the summer roads.</h3>
             <p class="small">
               Includes a waxing and cleaning from inside to out by one of our proud professional cleaning technicians
             </p>
-            <p class="price">
+            <p class="price nowrap">
               <span class="price-left">$120</span>
               <span class="price-right">.00</span>
             </p>
@@ -151,7 +166,7 @@
                     </p>
                   </div><!--/.col3-->
                   <div class="col9">
-                    <p class="small pull-right">
+                    <p class="small right-align">
                       <span class="light">Home Services / </span>
                       Cleaning
                     </p>
@@ -169,13 +184,13 @@
                 </p>
                 <div class="row clearfix">
                   <div class="col3">
-                    <p class="price">
+                    <p class="price nowrap">
                       <span class="price-left">$120</span>
                       <span class="price-right">.00</span>
                     </p>
                   </div>
                   <div class="col9">
-                    <p class="small pull-right">
+                    <p class="small right-align">
                       <span class="light">Tutoring Services / </span>
                       Learning a language
                     </p>
@@ -195,13 +210,13 @@
                 </p>
                 <div class="row clearfix">
                   <div class="col4">
-                    <p class="price">
+                    <p class="price nowrap">
                       <span class="price-left">$85</span>
                       <span class="price-right">.00 per hour</span>
                     </p>
                   </div>
                   <div class="col8">
-                    <p class="small pull-right">
+                    <p class="small right-align">
                       <span class="light">General Contracting / </span>
                       Plumbing
                     </p>
@@ -219,13 +234,13 @@
                 </p>
                 <div class="row clearfix">
                   <div class="col3">
-                    <p class="price">
+                    <p class="price nowrap">
                       <span class="price-left">$99</span>
                       <span class="price-right">.00</span>
                     </p>
                   </div>
                   <div class="col9">
-                    <p class="small pull-right">
+                    <p class="small right-align">
                       <span class="light">Home Services / </span>
                       Cleaning
                     </p>
@@ -243,7 +258,7 @@
                 <p>
                   Electricity is broken? Fix it!
                 </p>
-                <p class="price">
+                <p class="price nowrap">
                   <span class="price-left">$210</span>
                   <span class="price-right">.00</span>
                 </p>
@@ -262,7 +277,7 @@
                   Send movers to your door without any hassle.
                 </p>
                 <div class="row">
-                  <p class="price">
+                  <p class="price nowrap">
                     <span class="price-left">$1210</span>
                     <span class="price-right">.00</span>
                   </p>
@@ -282,7 +297,7 @@
                   Buon Giorno. Get ready for your trip to Italy with a 3 day lesson plan.
                 </p>
                 <div class="row clearfix">
-                  <p class="price">
+                  <p class="price nowrap">
                     <span class="price-left">$60</span>
                     <span class="price-right">.00 per day</span>
                   </p>
@@ -304,7 +319,7 @@
                   Need a party pronto? Hire a clown or party balloon castle.
                 </p>
                 <div class="row clearfix">
-                  <p class="price">
+                  <p class="price nowrap">
                     <span class="price-left">$80</span>
                     <span class="price-right">.00 per 1/2 hour</span>
                   </p>
@@ -323,7 +338,7 @@
                 <p>
                   Time to fix that leaky faucet with this special deal.
                 </p>
-                <p>
+                <p class="price nowrap">
                   <span class="price-left">$780</span>
                   <superscript class="price-right">.00</superscript>
                 </p>
@@ -341,7 +356,7 @@
                 <p>
                   Looks like those grapes are ready for harvesting. Do it yourself or get some help.
                 </p>
-                <p class="price">
+                <p class="price nowrap">
                   <span class="price-left">$10</span>
                   <span class="price-right">.00</span>
                 </p>
@@ -397,5 +412,7 @@
         <a href="">Privacy Policy</a>
       </p>
     </footer>
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="housecall.js"></script>
   </body>
 </html>
