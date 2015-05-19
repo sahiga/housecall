@@ -1,6 +1,6 @@
-
-/* Custom styles */
-
+/****************************
+  Base Styles
+ ****************************/
 body {
   color: #222;
   font-family: "Lato", Helvetica, Arial, sans-serif;
@@ -31,11 +31,111 @@ h3 {
   font-size: 1.2em;
 }
 
+p {
+  margin: 0.5em 0;
+  line-height: 1.5em;
+}
+
+.center {
+  text-align: center;
+}
+
+
+.right-align {
+  text-align: right;
+  margin: 1em 0 0 0;
+}
+
+.small {
+  font-size: 0.8em;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+/****************************
+  Layout
+ ****************************/
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+[class*="col"] {
+  float: left;
+  min-height: 1px;
+  margin: 0.5em 0 0.5em 2.75%;
+}
+
+[class*="col"]:first-child {
+  margin-left: 0;
+}
+
+.col1 { width: 5.8125%; }
+.col2 { width: 14.375%; }
+.col3 { width: 22.9375%; }
+.col4 { width: 31.5%; }
+.col5 { width: 40.0625%; }
+.col6 { width: 48.625%; }
+.col7 { width: 57.1875%; }
+.col8 { width: 65.75%; }
+.col9 { width: 74.3125%; }
+.col10 { width: 82.875%; }
+.col11 { width: 91.4375%; }
+.col12 { width: 100%; }
+
+/****************************
+  Header
+ ****************************/
+header {
+  background: aliceblue;
+  font-size: 0.9em;
+}
+
+.header-list {
+  margin: 1em 0 1em 1em;
+  display: inline-block;
+}
+
+.header-list-item {
+  display: inline-block;
+  margin: 0 0.5em 0 0;
+  padding: 0 0.5em 0 0;
+  border-width: 0 1px 0 0;
+  border-style: solid;
+  border-color: #3C72D1;
+}
+
+.header-list-item:last-child {
+  border: 0;
+}
+
+.header-right-align {
+  text-align: right;
+}
+
 .masthead {
   border-style: solid;
   border-width: 0 0 2px 0;
   border-color: #DEEAFF;
   padding: 0.5em 0;
+  font-size: 2.2em;
+  font-weight: 400;
 }
 
 .logo {
@@ -43,12 +143,9 @@ h3 {
   margin: 0.5em 0;
 }
 
-.masthead {
-  font-size: 2.2em;
-  font-weight: 300;
-}
-
-/* Inputs and buttons */
+/****************************
+  Input Fields
+ ****************************/
 input {
   margin: 0.5em 0;
   font-size: 1em;
@@ -100,6 +197,9 @@ input {
    color: #222;  
 }
 
+/****************************
+  Buttons
+ ****************************/
 .btn {
   font-family: "Lato", Helvetica, Arial, sans-serif;
   padding: 1em 2em;
@@ -130,70 +230,20 @@ input {
   background: #3C72D1;
 }
 
-/* Layout */
-.container {
-  width: 80%;
-  margin: 0 auto;
+/****************************
+  Sidebar
+ ****************************/
+.toggle-icon {
+  float: right;
+  font-size: 0.75em;
 }
 
-.clearfix:before,
-.clearfix:after {
-  content: "";
-  display: table;
-}
-
-.clearfix:after {
-  clear: both;
-}
-
-.clearfix {
-  zoom: 1;
-}
-
-[class*="col"] {
-  float: left;
-  min-height: 1px;
-  margin: 0.5em 0 0.5em 2.75%;
-}
-
-[class*="col"]:first-child {
-  margin-left: 0;
-}
-
-.col1 {width: 5.8125%;}
-.col2 {width: 14.375%;}
-.col3 {width: 22.9375%;}
-.col4 {width: 31.5%;}
-.col5 {width: 40.0625%;}
-.col6 {width: 48.625%;}
-.col7 {width: 57.1875%;}
-.col8 {width: 65.75%;}
-.col9 {width: 74.3125%;}
-.col10 {width: 82.875%;}
-.col11 {width: 91.4375%;}
-.col12 {width: 100%;}
-
-header {
+.sidebar {
   background: aliceblue;
-  font-size: 0.9em;
-}
-
-.header-list {
-  margin: 1em 0 1em 1em;
-  display: inline-block;
-}
-
-.header-list-item {
-  display: inline-block;
-  margin: 0 0.5em 0 0;
-  padding: 0 0.5em 0 0;
-  border-width: 0 1px 0 0;
-  border-style: solid;
-  border-color: #3C72D1;
-}
-
-.header-list-item:last-child {
-  border: 0;
+  margin: 0.5em 0 0 0;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
 }
 
 .sidebar-main-title {
@@ -205,27 +255,11 @@ header {
   border-radius: 4px 4px 0 0;
 }
 
-.sidebar {
-  background: aliceblue;
-  padding: 0 0 1em 0;
-  margin: 0.5em 0 0 0;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
-}
-
-.sidebar-header {
-  padding: 0.5em 1em;
-}
-
 .sidebar-title {
+  background: #EBF2FF;
   font-weight: 700;
-  margin: 0.5em 0;
+  padding: 1em;
   cursor: pointer;
-}
-
-.footer-list {
-  margin: 0.25em 0 1em;
 }
 
 .sidebar-list-item, .sidebar-header {
@@ -247,17 +281,43 @@ header {
   padding: 1.2em;
 }
 
+
+/****************************
+  Main
+ ****************************/
 .photo-featured {
   width: 100%;
 }
 
-p {
-  margin: 0.5em 0;
-  line-height: 1.5em;
+.photo-positioned {
+  width: 150%;
+  position: relative;
 }
 
-.small {
-  font-size: 0.8em;
+.photo-moving {
+  right: 77px;
+}
+
+.photo-grapes {
+  right: 50px;
+}
+
+.photo-faucet {
+  right: 112px;
+}
+
+.photo-cleaning {
+  bottom: 76px;
+}
+
+.photo-spanish {
+  bottom: 50px;
+  right: 26px;
+}
+
+.photo-birthday {
+  bottom: 44px;
+  right: 60px;
 }
 
 .caps {
@@ -266,12 +326,9 @@ p {
   border-color: #DEEAFF;
   border-width: 0 0 2px 0;
   color: #3c72d1;
+  font-weight: 700;
   padding: 0.5em 1em 0.5em 0;
   margin: 0 0 0.8em 0;
-}
-
-.nowrap {
-  white-space: nowrap;
 }
 
 .price-left {
@@ -284,15 +341,6 @@ p {
   margin: -4px 0 0 0;
 }
 
-footer {
-  padding: 1em;
-  background: aliceblue;
-}
-
-.center {
-  text-align: center;
-}
-
 .secondary {
   font-size: 0.9em;
 }
@@ -303,7 +351,7 @@ footer {
   border-color: #D7E6FF;
   border-width: 0 0 2px 0;
   background: aliceblue;
-  height: 280px;
+  height: 320px;
   margin: 0 2px;
   overflow: hidden;
 }
@@ -317,23 +365,29 @@ footer {
   padding: 1em;
 }
 
-.footer-list-item {
-  line-height: 1.5em;
-}
-
-.right-align, .header-right-align {
-  text-align: right;
-}
-
 .light {
   color: #999;
 }
 
-.toggle-icon {
-  float: right;
-  font-size: 0.75em;
+/****************************
+  Footer
+ ****************************/
+footer {
+  padding: 1em;
+  background: aliceblue;
 }
 
+.footer-list {
+  margin: 0.25em 0 1em;
+}
+
+.footer-list-item {
+  line-height: 1.5em;
+}
+
+/****************************
+  Responsive Design Styles
+ ****************************/
 @media (max-width: 1000px) {
   .container {
     width: 95%;
@@ -370,6 +424,10 @@ footer {
     position: relative;
   }
 
+  .photo-positioned {
+    position: static;
+  }
+
   header, footer, .header-right-align {
     text-align: center;
   }
@@ -389,5 +447,25 @@ footer {
 
   .photo {
     width: 100%;
+  }
+}
+
+@media (max-width: 470px) {
+  body {
+    font-size: 0.9em;
+  }
+
+  .nowrap {
+    white-space: normal;
+  }
+
+  .masthead {
+    text-align: center;
+  }
+
+  .search-box, .location-box {
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
   }
 }

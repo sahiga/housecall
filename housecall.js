@@ -3,6 +3,7 @@ $(document).ready(function() {
   var titles = $('.sidebar-title');
   var icons = $('.toggle-icon');
 
+  // Switch +/- icons when titles are clicked
   titles.click(function() {
     var icon = $(this).children('.toggle-icon');
     if (icon.hasClass('fa-minus')) {
@@ -11,10 +12,12 @@ $(document).ready(function() {
       icon.removeClass('fa-plus').addClass('fa-minus');
     }
 
-    $(this).parent().next().toggle('fast');
+    // Toggle the menu below the title
+    $(this).next().toggle('fast');
   });
 
-  function hideLists() {
+  // Hide sidebar menus in viewports of less than 800 pixels; otherwise, show them
+  function toggleLists() {
     if ($(window).width() < 800) {
       lists.css('display', 'none');
       icons.removeClass('fa-minus').addClass('fa-plus');
@@ -25,10 +28,11 @@ $(document).ready(function() {
 
   }
 
+  // Call toggleLists() on window resize as well as document ready
   $(window).resize(function() {
-    hideLists();
+    toggleLists();
   });
 
-  hideLists();
+  toggleLists();
 
 });
